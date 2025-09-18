@@ -432,31 +432,37 @@ export default function VoobrazhayLanding() {
             <AccordionItem value="item-1">
               <AccordionTrigger>Что входит в работу?</AccordionTrigger>
               <AccordionContent>
-                Текст истории, иллюстрации, верстка, печать и подарочная упаковка. Правки — 1–2 круга.
+                Текст истории, иллюстрации, вёрстка, печать и подарочная упаковка. В Мини и Премиум включены 1–2 круга правок. В Премиум без ограничений.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>Можно ли править текст и рисунки?</AccordionTrigger>
               <AccordionContent>
-                Да. Мы дорабатываем, пока вы не скажете «Вау!». Обычно хватает 1–2 итераций.
+                Да. Мы дорабатываем историю и иллюстрации, пока вы не скажете: «Вау!». Обычно хватает 1–2 итераций.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>Как отправить фото и факты?</AccordionTrigger>
               <AccordionContent>
-                В Telegram‑чате: мы пришлём бриф и форму загрузки. Можно ответить голосом — мы всё структурируем.
+                В Telegram-чате: мы пришлём короткий бриф с вопросами. Можно ответить даже голосом — мы всё структурируем сами.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Сроки и доставка</AccordionTrigger>
+              <AccordionTrigger>Сколько ждать готовую книгу?</AccordionTrigger>
               <AccordionContent>
-                Обычно 7–10 дней на всё. Доставка по РФ и миру — по запросу.
+                Обычно 7 дней на весь процесс изготовления, плюс доставка по России.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Безопасность данных</AccordionTrigger>
+              <AccordionTrigger>Можно ли сразу подарить книгу адресату?</AccordionTrigger>
               <AccordionContent>
-                Фото и бриф используются только для создания вашей книги и удаляются после печати.
+                Да! Мы упакуем книгу и отправим её напрямую получателю. Можно добавить персональное поздравление.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>Что если мне не понравится результат?</AccordionTrigger>
+              <AccordionContent>
+                Мы дорабатываем текст и иллюстрации, пока вы не будете довольны. Ваша история должна вызвать улыбку и радость. Но если вам все равно не понравится, до согласования текста можно вернуть деньги без вопросов.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
