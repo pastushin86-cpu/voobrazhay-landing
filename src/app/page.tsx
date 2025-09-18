@@ -76,7 +76,7 @@ export default function VoobrazhayLanding() {
               <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
             </div>
             <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Книга, где главный герой — ваш ребенок, пара или семья
+              Книга, где главный герой — <span className="text-orange-600">ваш ребенок, пара или семья</span>
             </h1>
             <p className="mt-5 text-lg text-gray-700 max-w-xl">
               Мы превращаем ваши воспоминания, мечты и фотографии в книгу, которая тронет сердца близких. Улыбка, слезы радости и самые дорогие моменты — на каждой странице.
