@@ -57,8 +57,8 @@ export default function VoobrazhayLanding() {
           <div className="hidden sm:flex items-center gap-3">
             <Badge variant="outline" className="border-teal-200 text-teal-700">Работает в Telegram</Badge>
             <Badge variant="outline" className="border-orange-200 text-orange-700">Предпросмотр в чате</Badge>
-            <Button asChild className="rounded-2xl px-5">
-              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+            <Button asChild className="rounded-2xl px-5 whitespace-nowrap">
+              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
                 Открыть в Telegram
                 <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </a>
@@ -93,8 +93,8 @@ export default function VoobrazhayLanding() {
               <div>850+ счастливых семей</div>
             </div>
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
-              <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
-                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+              <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
+                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
                   Посмотреть примеры в Telegram
                   <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
                 </a>
@@ -183,8 +183,8 @@ export default function VoobrazhayLanding() {
             ))}
           </div>
           <div className="mt-10 flex justify-center">
-            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
-              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
+              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
                 Заполнить бриф в Telegram
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
@@ -356,8 +356,8 @@ export default function VoobrazhayLanding() {
           </div>
 
           <div className="mt-10 flex flex-col items-center gap-3">
-            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
-              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
+              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
                 Оформить книгу в Telegram
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
@@ -453,8 +453,8 @@ export default function VoobrazhayLanding() {
           </Accordion>
 
           <div className="mt-10 flex flex-col items-center gap-3">
-            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
-              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+            <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
+              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
                 Начать в Telegram
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
