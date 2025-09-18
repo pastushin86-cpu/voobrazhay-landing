@@ -52,7 +52,7 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-5 w-5 text-white" />
             </div>
             <span className="font-semibold tracking-tight text-lg">Воображай</span>
-            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">- храним ваши воспоминания</Badge>
+            <Badge className="ml-1 bg-orange-100 text-orange-700 hover:bg-orange-100">- храним ваши воспоминания</Badge>
           </div>
           <div className="hidden sm:flex items-center gap-3">
             <Badge variant="outline" className="border-teal-200 text-teal-700">Доставка по РФ</Badge>
