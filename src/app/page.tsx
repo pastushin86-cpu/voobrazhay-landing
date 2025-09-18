@@ -26,6 +26,11 @@ import {
 
 // -------- Базовые настройки бренда --------
 const TELEGRAM_URL = "https://t.me/VoobrazhayBot?start=landing"; // ← замени при необходимости
+const PRICING_LINKS = {
+  mini: "https://t.me/VoobrazhayBot?start=mini", // ← заглушка для Мини
+  maxi: "https://t.me/VoobrazhayBot?start=maxi", // ← заглушка для Макси  
+  premium: "https://t.me/VoobrazhayBot?start=premium", // ← заглушка для Премиум
+};
 const GALLERY = [
   "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
   "/gallery/child-book.jpg",   // Детская книга с девочкой на метле
@@ -378,18 +383,21 @@ export default function VoobrazhayLanding() {
               tag: "📖 Лёгкий вариант",
               desc: "Мягкая обложка формата А5, 20–30 страниц, до 15 иллюстраций. Подходит для детских сказок и небольших историй.",
               cta: "Выбрать «Мини»",
+              link: PRICING_LINKS.mini,
             },{
               name: "Макси",
               price: "9 900 ₽",
               tag: "✨ Самый популярный",
               desc: "Твёрдая обложка А4, 30–40 страниц, до 25 иллюстраций. Идеален для семейной книги или истории пары.",
               cta: "Выбрать «Макси»",
+              link: PRICING_LINKS.maxi,
             },{
               name: "Премиум",
               price: "16 900 ₽",
               tag: "🎁 Для особых случаев",
               desc: "Все что в Макси + Подарочная коробка, тиснение, расширенная редактура текста и иллюстраций без ограничений. Книга-реликвия, которую хочется беречь.",
               cta: "Выбрать «Премиум»",
+              link: PRICING_LINKS.premium,
             }].map((t) => (
               <motion.div key={t.name} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full flex flex-col">
@@ -399,11 +407,11 @@ export default function VoobrazhayLanding() {
                       <span className="text-sm text-orange-600 font-medium">{t.tag}</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="text-gray-700 space-y-4 flex-1">
+                  <CardContent className="text-gray-700 space-y-4 flex-1 flex flex-col">
                     <div className="text-3xl font-bold">{t.price}</div>
-                    <p>{t.desc}</p>
-                    <Button asChild className="rounded-2xl mt-2">
-                      <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">{t.cta}</a>
+                    <p className="flex-1">{t.desc}</p>
+                    <Button asChild className="rounded-2xl mt-auto">
+                      <a href={t.link} target="_blank" rel="noreferrer">{t.cta}</a>
                     </Button>
                   </CardContent>
                 </Card>
