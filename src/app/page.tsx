@@ -73,11 +73,11 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeUp}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm">
-              <Stars className="h-4 w-4" /> Подарок, который становится реликвией
+              <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
             </div>
             <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Персонализированные книги
-              <span className="block text-orange-600">где главные герои — вы</span>
+              Книга, где главный герой
+              <span className="block text-orange-600">ваш ребёнок, пара или семья</span>
             </h1>
             <p className="mt-5 text-lg text-gray-700 max-w-xl">
               Мы бережно превращаем вашу историю, фотографии и любимые моменты в печатную книгу
