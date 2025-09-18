@@ -60,7 +60,7 @@ export default function VoobrazhayLanding() {
             <Button asChild className="rounded-2xl px-5">
               <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
                 Открыть в Telegram
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </a>
             </Button>
           </div>
@@ -96,7 +96,7 @@ export default function VoobrazhayLanding() {
               <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
                 <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
                   Посмотреть примеры в Telegram
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
                 </a>
               </Button>
               <Button asChild variant="outline" className="rounded-2xl h-12 px-6 text-base border-orange-200">
@@ -186,7 +186,7 @@ export default function VoobrazhayLanding() {
             <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
               <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
                 Заполнить бриф в Telegram
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
             </Button>
           </div>
@@ -359,7 +359,7 @@ export default function VoobrazhayLanding() {
             <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
               <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
                 Оформить книгу в Telegram
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
             </Button>
             <div className="text-sm text-gray-600">🔹 Заказы на эту неделю открыты</div>
@@ -456,7 +456,7 @@ export default function VoobrazhayLanding() {
             <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base">
               <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
                 Начать в Telegram
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
             </Button>
             <div className="text-sm text-gray-600">🔹 Принимаем ограниченное число заказов — чтобы сохранить качество</div>
