@@ -394,8 +394,10 @@ export default function VoobrazhayLanding() {
               <motion.div key={t.name} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full flex flex-col">
                   <CardHeader>
-                    <CardTitle className="text-2xl flex items-center gap-2">{t.name}</CardTitle>
-                    <div className="text-sm text-orange-600 font-medium">{t.tag}</div>
+                    <CardTitle className="text-2xl flex items-center justify-between">
+                      <span>{t.name}</span>
+                      <span className="text-sm text-orange-600 font-medium">{t.tag}</span>
+                    </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-700 space-y-4 flex-1">
                     <div className="text-3xl font-bold">{t.price}</div>
