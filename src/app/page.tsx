@@ -52,7 +52,7 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-5 w-5 text-white" />
             </div>
             <span className="font-semibold tracking-tight text-lg">Воображай</span>
-            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">Подарок, который трогает сердце</Badge>
+            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">подарок, который хранит ваши истории</Badge>
           </div>
           <div className="hidden sm:flex items-center gap-3">
             <Badge variant="outline" className="border-teal-200 text-teal-700">Доставка по РФ</Badge>
@@ -73,7 +73,7 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeUp}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm">
-              <Stars className="h-4 w-4" /> подарок, который хранит ваши истории
+              <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
             </div>
             <h1 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
               Книга, где главный герой — <span className="text-orange-600">ваш ребенок, пара или семья</span>
