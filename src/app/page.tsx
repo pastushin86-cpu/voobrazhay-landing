@@ -52,14 +52,14 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-5 w-5 text-white" />
             </div>
             <span className="font-semibold tracking-tight text-lg">Воображай</span>
-            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">новинка</Badge>
+            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">Подарок, который трогает сердце</Badge>
           </div>
           <div className="hidden sm:flex items-center gap-3">
-            <Badge variant="outline" className="border-teal-200 text-teal-700">Работает в Telegram</Badge>
-            <Badge variant="outline" className="border-orange-200 text-orange-700">Предпросмотр в чате</Badge>
+            <Badge variant="outline" className="border-teal-200 text-teal-700">Доставка по РФ</Badge>
+            <Badge variant="outline" className="border-orange-200 text-orange-700">Изготовление 5-7 дней</Badge>
             <Button asChild className="rounded-2xl px-5 whitespace-nowrap">
-              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
-                Открыть в Telegram
+              <a href="#order" className="flex items-center">
+                Оформить заказ
                 <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </a>
             </Button>
@@ -76,12 +76,10 @@ export default function VoobrazhayLanding() {
               <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
             </div>
             <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Книга, где главный герой
-              <span className="block text-orange-600">ваш ребёнок, пара или семья</span>
+              Книга, где главный герой — ваш ребенок, пара или семья
             </h1>
             <p className="mt-5 text-lg text-gray-700 max-w-xl">
-              Мы бережно превращаем вашу историю, фотографии и любимые моменты в печатную книгу
-              с тёплыми акварельными иллюстрациями. Радость открытия — на каждой странице.
+              Мы превращаем ваши воспоминания, мечты и фотографии в книгу, которая тронет сердца близких. Улыбка, слезы радости и самые дорогие моменты — на каждой странице.
             </p>
             {/* Социальное доказательство */}
             <div className="mt-4 flex items-center gap-4 text-sm text-gray-700">
@@ -94,14 +92,9 @@ export default function VoobrazhayLanding() {
             </div>
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
               <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
-                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
-                  Посмотреть примеры в Telegram
+                <a href="#order" className="flex items-center">
+                  Выбрать подарок
                   <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </a>
-              </Button>
-              <Button asChild variant="outline" className="rounded-2xl h-12 px-6 text-base border-orange-200">
-                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
-                  Заказать в Telegram
                 </a>
               </Button>
             </div>
