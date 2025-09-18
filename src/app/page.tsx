@@ -295,14 +295,14 @@ export default function VoobrazhayLanding() {
           <motion.div {...fadeUp}>
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
             <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
-            <p className="mt-3 text-gray-700">Мы верим, что лучшие подарки — это истории про нас самих. Поэтому бережно собираем факты, пишем тёплые тексты и создаём иллюстрации, которые хочется рассматривать. Книга остаётся дома надолго — и к ней возвращаются.</p>
+            <p className="mt-3 text-gray-700">Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. Поэтому мы бережно собираем детали, превращаем их в тёплый текст и иллюстрации, которые хочется перечитывать и пересматривать снова и снова. Эти книги остаются в семье на годы — и становятся её частью.</p>
           </motion.div>
           <motion.div {...fadeUp}>
-            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Гарантии и приватность</Badge>
+            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Гарантии и забота</Badge>
             <div className="mt-3 space-y-3 text-gray-700">
-              <div className="flex items-start gap-3"><Check className="h-5 w-5 text-orange-600 mt-0.5" />Мы дорабатываем, пока вы не скажете: «Вау!»</div>
-              <div className="flex items-start gap-3"><Shield className="h-5 w-5 text-orange-600 mt-0.5" />Фото и бриф используются только для создания книги и удаляются после печати.</div>
-              <div className="flex items-start gap-3"><Gift className="h-5 w-5 text-orange-600 mt-0.5" />Можно добавить персональное поздравление на первой странице.</div>
+              <div className="flex items-start gap-3"><Check className="h-5 w-5 text-orange-600 mt-0.5" />Работаем до тех пор, пока книга не вызывает у вас искреннее «Вау!».</div>
+              <div className="flex items-start gap-3"><Shield className="h-5 w-5 text-orange-600 mt-0.5" />Все фото и материалы используются только для книги и удаляются после печати.</div>
+              <div className="flex items-start gap-3"><Gift className="h-5 w-5 text-orange-600 mt-0.5" />На первой странице можно оставить личное поздравление или послание для близкого человека.</div>
             </div>
           </motion.div>
         </div>
