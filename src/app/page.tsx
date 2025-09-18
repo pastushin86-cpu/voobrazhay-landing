@@ -123,9 +123,9 @@ export default function VoobrazhayLanding() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[{
-              icon: <Users className="h-5 w-5 text-orange-600" />, title: "Для детей", text: "Сказка, где ребёнок — главный герой: его увлечения, мечты и любимые места."},
-              {icon: <Heart className="h-5 w-5 text-orange-600" />, title: "Для пары", text: "История любви с вашими «впервые» и планами на будущее — нежно и честно."},
-              {icon: <BookOpen className="h-5 w-5 text-orange-600" />, title: "Для родителей", text: "Семейная сага: важные моменты и тёплые ценности, которые хочется хранить."},
+              icon: <Users className="h-5 w-5 text-orange-600" />, title: "Для детей", text: "Сказка, где ребёнок становится главным героем. Его мечты, увлечения и любимые места оживают на страницах."},
+              {icon: <Heart className="h-5 w-5 text-orange-600" />, title: "Для пары", text: "История вашей любви — от первых встреч до мечтаний о будущем. Искренне, нежно и только про вас."},
+              {icon: <BookOpen className="h-5 w-5 text-orange-600" />, title: "Для родителей", text: "Семейная книга, где собраны важные моменты, традиции и ценности. Подарок, который хранится как реликвия."},
             ].map((b, i) => (
               <motion.div key={i} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full">
