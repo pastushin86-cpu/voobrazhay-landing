@@ -487,7 +487,7 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-4 w-4 text-white" />
             </div>
             <span>Воображай</span>
-            <span className="text-gray-400">— книги, которые хочется держать дома</span>
+            <span className="text-gray-400">— книги, где оживают истории</span>
           </div>
           <div className="text-sm text-gray-500">© {new Date().getFullYear()} Воображай. Все права защищены.</div>
         </div>
