@@ -474,7 +474,7 @@ export default function VoobrazhayLanding() {
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
             </Button>
-            <div className="text-sm text-gray-600">🔹 Принимаем ограниченное число заказов — чтобы сохранить качество</div>
+            <div className="text-sm text-gray-600">🔹 Принимаем только 20 заказов в неделю</div>
           </div>
         </div>
       </section>
