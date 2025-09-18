@@ -231,7 +231,7 @@ export default function VoobrazhayLanding() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Сюжет строится на ваших героях, местах и событиях. Без шаблонов и штампов.</p>
+                  <p>Каждая книга пишется с нуля: ваши герои, ваши места, ваши моменты. Без шаблонов — только ваша история.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -240,11 +240,11 @@ export default function VoobrazhayLanding() {
               <Card className="rounded-3xl border-orange-100 h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-xl">
-                    <ImageIcon className="h-5 w-5 text-orange-600" /> Акварель + ИИ‑иллюстрации
+                    <ImageIcon className="h-5 w-5 text-orange-600" /> Акварельные иллюстрации
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Иллюстрации деликатно похожи на вас и передают настроение момента.</p>
+                  <p>Нежные рисунки создаются по вашим фото и настроению. Герои книги узнаваемы и трогательны.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -253,11 +253,11 @@ export default function VoobrazhayLanding() {
               <Card className="rounded-3xl border-orange-100 h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-xl">
-                    <Crown className="h-5 w-5 text-orange-600" /> Типографское качество
+                    <Crown className="h-5 w-5 text-orange-600" /> Премиальное исполнение
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Плотная бумага, чистая печать, ровная верстка — книга «из коробки» выглядит как подарок.</p>
+                  <p>Плотная бумага, чёткая печать и подарочная упаковка — книга выглядит как ценная реликвия.</p>
                 </CardContent>
               </Card>
             </motion.div>
