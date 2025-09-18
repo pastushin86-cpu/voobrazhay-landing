@@ -26,18 +26,11 @@ import {
 
 // -------- Базовые настройки бренда --------
 const TELEGRAM_URL = "https://t.me/VoobrazhayBot?start=landing"; // ← замени при необходимости
-const PRICING_LINKS = {
-  mini: "https://t.me/VoobrazhayBot?start=mini", // ← заглушка для Мини
-  maxi: "https://t.me/VoobrazhayBot?start=maxi", // ← заглушка для Макси  
-  premium: "https://t.me/VoobrazhayBot?start=premium", // ← заглушка для Премиум
-};
 const GALLERY = [
   "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
   "/gallery/child-book.jpg",   // Детская книга с девочкой на метле
   "/gallery/love-book.jpg",    // Романтическая история пары
   "/gallery/unicorn-book.jpg", // Детская история с единорогом
-  "/gallery/family-box.jpg",   // Дополнительный пример (повтор)
-  "/gallery/child-book.jpg",   // Дополнительный пример (повтор)
 ];
 
 const fadeUp = {
@@ -59,14 +52,14 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-5 w-5 text-white" />
             </div>
             <span className="font-semibold tracking-tight text-lg">Воображай</span>
-            <Badge className="ml-0.5 mt-0.5 bg-orange-100 text-orange-700 hover:bg-orange-100">Храним ваши воспоминания</Badge>
+            <Badge className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-100">новинка</Badge>
           </div>
           <div className="hidden sm:flex items-center gap-3">
-            <Badge variant="outline" className="border-teal-200 text-teal-700">Доставка по РФ</Badge>
-            <Badge variant="outline" className="border-orange-200 text-orange-700">Изготовление 5-7 дней</Badge>
+            <Badge variant="outline" className="border-teal-200 text-teal-700">Работает в Telegram</Badge>
+            <Badge variant="outline" className="border-orange-200 text-orange-700">Предпросмотр в чате</Badge>
             <Button asChild className="rounded-2xl px-5 whitespace-nowrap">
-              <a href="#order" className="flex items-center">
-                Оформить заказ
+              <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
+                Открыть в Telegram
                 <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </a>
             </Button>
@@ -80,13 +73,15 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeUp}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm">
-              <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
+              <Stars className="h-4 w-4" /> Подарок, который становится реликвией
             </div>
-            <h1 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Книга, где главный герой — <span className="text-orange-600">ваш ребенок, пара или семья</span>
+            <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+              Персонализированные книги
+              <span className="block text-orange-600">где главные герои — вы</span>
             </h1>
             <p className="mt-5 text-lg text-gray-700 max-w-xl">
-              Мы превращаем ваши воспоминания, мечты и фотографии в книгу, которая тронет сердца близких. Улыбка, слезы радости и самые дорогие моменты — на каждой странице.
+              Мы бережно превращаем вашу историю, фотографии и любимые моменты в печатную книгу
+              с тёплыми акварельными иллюстрациями. Радость открытия — на каждой странице.
             </p>
             {/* Социальное доказательство */}
             <div className="mt-4 flex items-center gap-4 text-sm text-gray-700">
@@ -99,9 +94,14 @@ export default function VoobrazhayLanding() {
             </div>
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
               <Button asChild size="lg" className="rounded-2xl h-12 px-6 text-base whitespace-nowrap">
-                <a href="#order" className="flex items-center">
-                  Выбрать подарок
+                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer" className="flex items-center">
+                  Посмотреть примеры в Telegram
                   <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="rounded-2xl h-12 px-6 text-base border-orange-200">
+                <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+                  Заказать в Telegram
                 </a>
               </Button>
             </div>
@@ -130,9 +130,9 @@ export default function VoobrazhayLanding() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[{
-              icon: <Users className="h-5 w-5 text-orange-600" />, title: "Для детей", text: "Сказка, где ребёнок становится главным героем. Его мечты, увлечения и любимые места оживают на страницах."},
-              {icon: <Heart className="h-5 w-5 text-orange-600" />, title: "Для пары", text: "История вашей любви — от первых встреч до мечтаний о будущем. Искренне, нежно и только про вас."},
-              {icon: <BookOpen className="h-5 w-5 text-orange-600" />, title: "Для родителей", text: "Семейная книга, где собраны важные моменты, традиции и ценности. Подарок, который хранится как реликвия."},
+              icon: <Users className="h-5 w-5 text-orange-600" />, title: "Для детей", text: "Сказка, где ребёнок — главный герой: его увлечения, мечты и любимые места."},
+              {icon: <Heart className="h-5 w-5 text-orange-600" />, title: "Для пары", text: "История любви с вашими «впервые» и планами на будущее — нежно и честно."},
+              {icon: <BookOpen className="h-5 w-5 text-orange-600" />, title: "Для родителей", text: "Семейная сага: важные моменты и тёплые ценности, которые хочется хранить."},
             ].map((b, i) => (
               <motion.div key={i} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full">
@@ -159,15 +159,15 @@ export default function VoobrazhayLanding() {
             {[{
               step: 1,
               title: "Короткий бриф в Telegram",
-              text: "Вы отвечаете на несколько простых вопросов и делитесь фотографиями в удобном чат-боте.",
+              text: "Вы отвечаете на несколько вопросов и загружаете фото прямо в чате.",
             },{
               step: 2,
-              title: "История и иллюстрации",
-              text: "Мы превращаем ваши ответы в живую историю и создаём акварельные иллюстрации, где герои похожи на вас.",
+              title: "Текст и иллюстрации",
+              text: "Пишем тёплую историю и создаём иллюстрации в нежной акварельной стилистике.",
             },{
               step: 3,
               title: "Печать и доставка",
-              text: "Книгу печатаем на премиальной бумаге, упаковываем как подарок и доставляем через 5–7 дней. Остаётся только вручить и увидеть эмоции.",
+              text: "Верстаем, печатаем и доставляем. Остаётся только подарить и радоваться вместе.",
             }].map((s) => (
               <motion.div key={s.step} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full">
@@ -236,7 +236,7 @@ export default function VoobrazhayLanding() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Каждая книга пишется с нуля: ваши герои, ваши места, ваши моменты. Без шаблонов — только ваша история.</p>
+                  <p>Сюжет строится на ваших героях, местах и событиях. Без шаблонов и штампов.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -245,11 +245,11 @@ export default function VoobrazhayLanding() {
               <Card className="rounded-3xl border-orange-100 h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-xl">
-                    <ImageIcon className="h-5 w-5 text-orange-600" /> Акварельные иллюстрации
+                    <ImageIcon className="h-5 w-5 text-orange-600" /> Акварель + ИИ‑иллюстрации
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Нежные рисунки создаются по вашим фото и настроению. Герои книги узнаваемы и трогательны.</p>
+                  <p>Иллюстрации деликатно похожи на вас и передают настроение момента.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -258,11 +258,11 @@ export default function VoobrazhayLanding() {
               <Card className="rounded-3xl border-orange-100 h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-xl">
-                    <Crown className="h-5 w-5 text-orange-600" /> Премиальное исполнение
+                    <Crown className="h-5 w-5 text-orange-600" /> Типографское качество
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Плотная бумага, чёткая печать и подарочная упаковка — книга выглядит как ценная реликвия.</p>
+                  <p>Плотная бумага, чистая печать, ровная верстка — книга «из коробки» выглядит как подарок.</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -300,14 +300,14 @@ export default function VoobrazhayLanding() {
           <motion.div {...fadeUp}>
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
             <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
-            <p className="mt-3 text-gray-700">Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. Поэтому мы бережно собираем детали, превращаем их в тёплый текст и иллюстрации, которые хочется перечитывать и пересматривать снова и снова. Эти книги остаются в семье на годы — и становятся её частью.</p>
+            <p className="mt-3 text-gray-700">Мы верим, что лучшие подарки — это истории про нас самих. Поэтому бережно собираем факты, пишем тёплые тексты и создаём иллюстрации, которые хочется рассматривать. Книга остаётся дома надолго — и к ней возвращаются.</p>
           </motion.div>
           <motion.div {...fadeUp}>
-            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Гарантии и забота</Badge>
+            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Гарантии и приватность</Badge>
             <div className="mt-3 space-y-3 text-gray-700">
-              <div className="flex items-start gap-3"><Check className="h-5 w-5 text-orange-600 mt-0.5" />Работаем до тех пор, пока книга не вызывает у вас искреннее «Вау!».</div>
-              <div className="flex items-start gap-3"><Shield className="h-5 w-5 text-orange-600 mt-0.5" />Все фото и материалы используются только для книги и удаляются после печати.</div>
-              <div className="flex items-start gap-3"><Gift className="h-5 w-5 text-orange-600 mt-0.5" />На первой странице можно оставить личное поздравление или послание для близкого человека.</div>
+              <div className="flex items-start gap-3"><Check className="h-5 w-5 text-orange-600 mt-0.5" />Мы дорабатываем, пока вы не скажете: «Вау!»</div>
+              <div className="flex items-start gap-3"><Shield className="h-5 w-5 text-orange-600 mt-0.5" />Фото и бриф используются только для создания книги и удаляются после печати.</div>
+              <div className="flex items-start gap-3"><Gift className="h-5 w-5 text-orange-600 mt-0.5" />Можно добавить персональное поздравление на первой странице.</div>
             </div>
           </motion.div>
         </div>
@@ -325,17 +325,17 @@ export default function VoobrazhayLanding() {
             {[{
               name: "Ирина и Андрей",
               role: "Санкт‑Петербург",
-              quote: "Подарили сыну на день рождения — он хохотал и радовался, когда узнавал наши фразы и свои любимые места. Теперь это его любимая книга перед сном.",
+              quote: "Дарили сыну на день рождения. Он листал и смеялся, потому что узнавал наши места и фразы.",
               img: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?q=80&w=256&auto=format&fit=crop",
             },{
               name: "Наташа",
               role: "Москва",
-              quote: "История получилась тёплой и настоящей, как будто написана специально для нас. А акварельные иллюстрации — прямо оживают на страницах.",
+              quote: "Текст — мягкий и живой, без штампов. Иллюстрации будто акварелью — очень уютно.",
               img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=256&auto=format&fit=crop",
             },{
               name: "Алексей",
               role: "Новосибирск",
-              quote: "Мы заказали книгу на годовщину родителей. Она стала центром праздника — гости листали, смеялись и просили контакты. Теперь книга занимает почётное место дома.",
+              quote: "Сделали к годовщине. Теперь эта книга лежит на виду — гости всегда листают и спрашивают, где сделали.",
               img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=256&auto=format&fit=crop",
             }].map((t, i) => (
               <motion.div key={i} {...fadeUp}>
@@ -372,46 +372,37 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Тарифы</Badge>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Подберите подарок под вашу историю</h2>
-            <p className="mt-2 text-gray-600">История может быть короткой сказкой или большой семейной сагой — выбор за вами</p>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Выберите формат подарка</h2>
+            <p className="mt-2 text-gray-600">Цены‑маяки — под реальную задачу адаптируем объём и детали.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[{
               name: "Мини",
               price: "5 900 ₽",
-              tag: "📖 Лёгкий вариант",
-              desc: "Мягкая обложка формата А5, 20–30 страниц, до 15 иллюстраций. Подходит для детских сказок и небольших историй.",
+              desc: "Мягкая обложка, A5, 20–30 страниц, до 10–15 иллюстраций",
               cta: "Выбрать «Мини»",
-              link: PRICING_LINKS.mini,
             },{
               name: "Макси",
               price: "9 900 ₽",
-              tag: "✨ Самый популярный",
-              desc: "Твёрдая обложка А4, 30–40 страниц, до 25 иллюстраций. Идеален для семейной книги или истории пары.",
+              desc: "Твёрдая обложка, A4, 40–50 страниц, до 20–25 иллюстраций",
               cta: "Выбрать «Макси»",
-              link: PRICING_LINKS.maxi,
             },{
               name: "Премиум",
-              price: "16 900 ₽",
-              tag: "🎁 Для особых случаев",
-              desc: "Все что в Макси + Подарочная коробка, тиснение, расширенная редактура текста и иллюстраций без ограничений. Книга-реликвия, которую хочется беречь.",
+              price: "14 900 ₽",
+              desc: "Подарочная коробка, тиснение, расширенная редактура и иллюстрации",
               cta: "Выбрать «Премиум»",
-              link: PRICING_LINKS.premium,
             }].map((t) => (
               <motion.div key={t.name} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full flex flex-col">
                   <CardHeader>
-                    <CardTitle className="text-2xl flex items-center justify-between">
-                      <span>{t.name}</span>
-                      <span className="text-sm text-orange-600 font-medium">{t.tag}</span>
-                    </CardTitle>
+                    <CardTitle className="text-2xl flex items-center gap-2">{t.name}</CardTitle>
                   </CardHeader>
-                  <CardContent className="text-gray-700 space-y-4 flex-1 flex flex-col">
+                  <CardContent className="text-gray-700 space-y-4 flex-1">
                     <div className="text-3xl font-bold">{t.price}</div>
-                    <p className="flex-1">{t.desc}</p>
-                    <Button asChild className="rounded-2xl mt-auto">
-                      <a href={t.link} target="_blank" rel="noreferrer">{t.cta}</a>
+                    <p>{t.desc}</p>
+                    <Button asChild className="rounded-2xl mt-2">
+                      <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">{t.cta}</a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -430,39 +421,33 @@ export default function VoobrazhayLanding() {
 
           <Accordion type="single" collapsible className="rounded-3xl bg-white border border-orange-100 p-4 sm:p-6">
             <AccordionItem value="item-1">
-              <AccordionTrigger value="item-1">Что входит в работу?</AccordionTrigger>
-              <AccordionContent value="item-1">
-                Текст истории, иллюстрации, вёрстка, печать и подарочная упаковка. В Мини и Премиум включены 1–2 круга правок. В Премиум без ограничений.
+              <AccordionTrigger>Что входит в работу?</AccordionTrigger>
+              <AccordionContent>
+                Текст истории, иллюстрации, верстка, печать и подарочная упаковка. Правки — 1–2 круга.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger value="item-2">Можно ли править текст и рисунки?</AccordionTrigger>
-              <AccordionContent value="item-2">
-                Да. Мы дорабатываем историю и иллюстрации, пока вы не скажете: «Вау!». Обычно хватает 1–2 итераций.
+              <AccordionTrigger>Можно ли править текст и рисунки?</AccordionTrigger>
+              <AccordionContent>
+                Да. Мы дорабатываем, пока вы не скажете «Вау!». Обычно хватает 1–2 итераций.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger value="item-3">Как отправить фото и факты?</AccordionTrigger>
-              <AccordionContent value="item-3">
-                В Telegram-чате: мы пришлём короткий бриф с вопросами. Можно ответить даже голосом — мы всё структурируем сами.
+              <AccordionTrigger>Как отправить фото и факты?</AccordionTrigger>
+              <AccordionContent>
+                В Telegram‑чате: мы пришлём бриф и форму загрузки. Можно ответить голосом — мы всё структурируем.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger value="item-4">Сколько ждать готовую книгу?</AccordionTrigger>
-              <AccordionContent value="item-4">
-                Обычно 7 дней на весь процесс изготовления, плюс доставка по России.
+              <AccordionTrigger>Сроки и доставка</AccordionTrigger>
+              <AccordionContent>
+                Обычно 7–10 дней на всё. Доставка по РФ и миру — по запросу.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger value="item-5">Можно ли сразу подарить книгу адресату?</AccordionTrigger>
-              <AccordionContent value="item-5">
-                Да! Мы упакуем книгу и отправим её напрямую получателю. Можно добавить персональное поздравление.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-6">
-              <AccordionTrigger value="item-6">Что если мне не понравится результат?</AccordionTrigger>
-              <AccordionContent value="item-6">
-                Мы дорабатываем текст и иллюстрации, пока вы не будете довольны. Ваша история должна вызвать улыбку и радость. Но если вам все равно не понравится, до согласования текста можно вернуть деньги без вопросов.
+              <AccordionTrigger>Безопасность данных</AccordionTrigger>
+              <AccordionContent>
+                Фото и бриф используются только для создания вашей книги и удаляются после печати.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -474,7 +459,7 @@ export default function VoobrazhayLanding() {
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
               </a>
             </Button>
-            <div className="text-sm text-gray-600">🔹 Принимаем только 20 заказов в неделю</div>
+            <div className="text-sm text-gray-600">🔹 Принимаем ограниченное число заказов — чтобы сохранить качество</div>
           </div>
         </div>
       </section>
@@ -487,7 +472,7 @@ export default function VoobrazhayLanding() {
               <Sparkles className="h-4 w-4 text-white" />
             </div>
             <span>Воображай</span>
-            <span className="text-gray-400">— книги, где оживают истории</span>
+            <span className="text-gray-400">— книги, которые хочется держать дома</span>
           </div>
           <div className="text-sm text-gray-500">© {new Date().getFullYear()} Воображай. Все права защищены.</div>
         </div>
