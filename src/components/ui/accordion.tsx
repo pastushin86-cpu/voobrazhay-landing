@@ -59,15 +59,20 @@ export function AccordionItem({ className, value, ...props }: AccordionItemProps
   return <div className={cn("rounded-lg border", className)} {...props} />;
 }
 
+interface AccordionTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  value: string;
+}
+
 export function AccordionTrigger({ 
   className, 
   children, 
+  value,
   ...props 
-}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+}: AccordionTriggerProps) {
   const context = React.useContext(AccordionContext);
   if (!context) throw new Error("AccordionTrigger must be used within Accordion");
 
-  const isOpen = context.openItems.includes(props.value || "");
+  const isOpen = context.openItems.includes(value);
   
   return (
     <button
@@ -75,7 +80,7 @@ export function AccordionTrigger({
         "w-full text-left px-4 py-3 font-medium flex items-center justify-between hover:bg-gray-50 transition-colors",
         className
       )}
-      onClick={() => props.value && context.toggleItem(props.value)}
+      onClick={() => context.toggleItem(value)}
       {...props}
     >
       <span>{children}</span>
@@ -89,15 +94,20 @@ export function AccordionTrigger({
   );
 }
 
+interface AccordionContentProps extends React.HTMLAttributes<HTMLDivElement> {
+  value: string;
+}
+
 export function AccordionContent({ 
   className, 
   children, 
+  value,
   ...props 
-}: React.HTMLAttributes<HTMLDivElement>) {
+}: AccordionContentProps) {
   const context = React.useContext(AccordionContext);
   if (!context) throw new Error("AccordionContent must be used within Accordion");
 
-  const isOpen = context.openItems.includes(props.value || "");
+  const isOpen = context.openItems.includes(value);
 
   return (
     <div 
@@ -105,6 +115,7 @@ export function AccordionContent({
         "overflow-hidden transition-all duration-200",
         isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
       )}
+      {...props}
     >
       <div className={cn("px-4 pb-4 text-sm text-gray-700", className)}>
         {children}
