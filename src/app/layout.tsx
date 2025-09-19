@@ -43,13 +43,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    url: "https://voobrazhai.ru",
+    url: "https://voobrazhai.ru/",
     title: "Воображай — персонализированные книги по вашим историям",
-    description: "Уникальные книги, где главным героем становитесь вы, ваш ребёнок, пара или семья. Авторский текст, акварельные иллюстрации и типографское качество.",
+    description: "Книга, где главным героем становитесь вы, ваш ребёнок, пара или семья. Улыбка, слёзы радости и воспоминания — на каждой странице.",
     siteName: "Воображай",
     images: [
       {
-        url: "/gallery/family-box.jpg",
+        url: "https://voobrazhai.ru/family-box.jpg",
         width: 1200,
         height: 630,
         alt: "Персонализированная книга Воображай в подарочной упаковке",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Воображай — персонализированные книги по вашим историям",
-    description: "Уникальные книги, где главным героем становитесь вы, ваш ребёнок, пара или семья.",
-    images: ["/gallery/family-box.jpg"],
+    title: "Воображай — персонализированные книги",
+    description: "Лучший подарок: книга, где главным героем становитесь вы и ваши близкие.",
+    images: ["https://voobrazhai.ru/family-box.jpg"],
   },
   icons: {
     icon: "/gallery/favicon.ico",
@@ -76,7 +76,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Персонализированная книга Воображай",
-    "image": "https://voobrazhai.ru/gallery/family-box.jpg",
+    "image": "https://voobrazhai.ru/family-box.jpg",
     "description": "Книга, где главным героем становитесь вы, ваш ребёнок, пара или семья. Уникальные иллюстрации и тексты.",
     "brand": {
       "@type": "Brand",
