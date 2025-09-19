@@ -83,7 +83,7 @@ export default function VoobrazhayLanding() {
               <Stars className="h-4 w-4" /> Самый трогательный подарок 2025
             </div>
             <h1 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Книга, где главный герой — <span className="text-orange-600">ваш ребенок, пара или семья</span>
+              Книга, где главный герой — <span className="text-orange-600">ваш ребёнок, пара или семья</span>
             </h1>
             <p className="mt-5 text-lg text-gray-700 max-w-xl">
               Мы превращаем ваши воспоминания, мечты и фотографии в книгу, которая тронет сердца близких. Улыбка, слезы радости и самые дорогие моменты — на каждой странице.
@@ -111,7 +111,7 @@ export default function VoobrazhayLanding() {
           <motion.div {...fadeUp} className="grid grid-cols-2 gap-3">
             {grids.slice(0,4).map((src, i) => (
               <div key={i} className="relative group overflow-hidden rounded-3xl shadow-sm">
-                <img src={src} alt="Пример книги Воображай" className="h-48 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={src} alt="Персонализированная книга Воображай с акварельными иллюстрациями" className="h-48 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
               </div>
             ))}
@@ -124,7 +124,7 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">Для кого</Badge>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Книга под ваши сценарии</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Подберите подарок под вашу историю</h2>
             <p className="mt-2 text-gray-600">Детям, парам, родителям — у каждой истории свой тон и стиль.</p>
           </motion.div>
 
@@ -205,7 +205,7 @@ export default function VoobrazhayLanding() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {grids.map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
-                <img src={src} alt={`Разворот ${i + 1}`} className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={src} alt="Примеры персонализированных книг Воображай с уникальными иллюстрациями" className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
               </motion.div>
             ))}
@@ -223,7 +223,7 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">Почему Воображай</Badge>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Бережно. Красиво. По‑семейному</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Почему выбирают Воображай</h2>
             <p className="mt-2 text-gray-600">В каждой книге — часть вашей жизни. Мы делаем её ощутимой.</p>
           </motion.div>
 
@@ -286,7 +286,7 @@ export default function VoobrazhayLanding() {
   GALLERY[1]
 ].map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
-                <img src={src} alt={`Упаковка ${i+1}`} className="h-52 w-full object-cover" />
+                <img src={src} alt="Книга Воображай в подарочной упаковке с тиснением" className="h-52 w-full object-cover" />
               </motion.div>
             ))}
           </div>
@@ -318,7 +318,7 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">Отзывы</Badge>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Слова, от которых теплее</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Отзывы наших клиентов</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -342,7 +342,7 @@ export default function VoobrazhayLanding() {
                 <Card className="rounded-3xl border-orange-100 h-full">
                   <CardContent className="pt-6">
                     <div className="flex items-center gap-3">
-                      <img src={t.img} alt={t.name} className="h-10 w-10 rounded-full object-cover" />
+                      <img src={t.img} alt={`Фото клиента ${t.name} - отзыв о персонализированной книге Воображай`} className="h-10 w-10 rounded-full object-cover" />
                       <div>
                         <div className="font-semibold">{t.name}</div>
                         <div className="text-xs text-gray-500">{t.role}</div>
