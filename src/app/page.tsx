@@ -33,11 +33,11 @@ const PRICING_LINKS = {
 };
 const GALLERY = [
   "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
-  "/gallery/child-book.jpg",   // Детская книга с девочкой на метле
+  "/gallery/5.jpg",   // Детская книга с девочкой на метле
   "/gallery/love-book.jpg",    // Романтическая история пары
   "/gallery/6.jpg", // Детская история с единорогом
   "/gallery/family-box.jpg",   // Дополнительный пример (повтор)
-  "/gallery/child-book.jpg",   // Дополнительный пример (повтор)
+  "/gallery/5.jpg",   // Дополнительный пример (повтор)
 ];
 
 const fadeUp = {
