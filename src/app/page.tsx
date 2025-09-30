@@ -35,7 +35,7 @@ const GALLERY = [
   "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
   "/gallery/child-book.jpg",   // Детская книга с девочкой на метле
   "/gallery/love-book.jpg",    // Романтическая история пары
-  "/gallery/unicorn-book.jpg", // Детская история с единорогом
+  "/gallery/6.jpg", // Детская история с единорогом
   "/gallery/family-box.jpg",   // Дополнительный пример (повтор)
   "/gallery/child-book.jpg",   // Дополнительный пример (повтор)
 ];
