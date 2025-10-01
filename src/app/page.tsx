@@ -282,7 +282,7 @@ export default function VoobrazhayLanding() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
   GALLERY[0],
-  "/gallery/family-box.jpg",
+  "/gallery/14-new.jpg",
   GALLERY[1]
 ].map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
