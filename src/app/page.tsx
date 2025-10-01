@@ -282,7 +282,7 @@ export default function VoobrazhayLanding() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
   GALLERY[0],
-  "/gallery/14.jpg",
+  "/gallery/family-box.jpg",
   GALLERY[1]
 ].map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
@@ -290,6 +290,14 @@ export default function VoobrazhayLanding() {
                   src={src} 
                   alt="Книга Воображай в подарочной упаковке с тиснением" 
                   className="h-52 w-full object-cover" 
+                  onError={(e) => {
+                    console.error('Ошибка загрузки изображения:', src);
+                    e.currentTarget.style.border = '2px solid red';
+                    e.currentTarget.style.backgroundColor = '#ffebee';
+                  }}
+                  onLoad={() => {
+                    console.log('Изображение загружено успешно:', src);
+                  }}
                 />
               </motion.div>
             ))}
