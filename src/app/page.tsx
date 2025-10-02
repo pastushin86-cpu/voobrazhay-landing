@@ -41,12 +41,12 @@ const GALLERY = [
 ];
 
 const BOOKS_GALLERY = [
-  "/gallery/2.jpg",        // Новое изображение 1
-  "/gallery/4.jpg",        // Новое изображение 2
+  "/gallery/family-box.jpg",   // Заменено на рабочий файл
+  "/gallery/5.jpg",        // Заменено на рабочий файл
   "/gallery/how_1.jpg",    // Новое изображение 3
   "/gallery/how_6.jpg",    // Новое изображение 4
   "/gallery/how_7.jpg",    // Новое изображение 5
-  "/gallery/how_9.jpeg",   // Новое изображение 6
+  "/gallery/12.jpeg",   // Заменено на рабочий файл
 ];
 
 const fadeUp = {
@@ -214,7 +214,19 @@ export default function VoobrazhayLanding() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {BOOKS_GALLERY.map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
-                <img src={src} alt="Примеры персонализированных книг Воображай с уникальными иллюстрациями" className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img 
+                  src={src} 
+                  alt="Примеры персонализированных книг Воображай с уникальными иллюстрациями" 
+                  className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  onError={(e) => {
+                    console.error('Ошибка загрузки изображения в BOOKS_GALLERY:', src);
+                    e.currentTarget.style.border = '2px solid red';
+                    e.currentTarget.style.backgroundColor = '#ffebee';
+                  }}
+                  onLoad={() => {
+                    console.log('Изображение BOOKS_GALLERY загружено успешно:', src);
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
               </motion.div>
             ))}
