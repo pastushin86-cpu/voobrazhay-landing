@@ -315,7 +315,7 @@ export default function VoobrazhayLanding() {
               </motion.div>
             ))}
           </div>
-          <div className="mt-6 text-center text-gray-700">Доставка по РФ включена на всех тарифах.</div>
+          <div className="mt-6 text-center text-gray-700">Срок изготовления обычно 7–10 дней. Доставка по РФ.</div>
         </div>
       </section>
 
