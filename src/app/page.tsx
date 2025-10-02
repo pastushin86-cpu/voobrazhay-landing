@@ -72,7 +72,7 @@ export default function VoobrazhayLanding() {
           </div>
           <div className="hidden sm:flex items-center gap-3">
             <Badge variant="outline" className="border-teal-200 text-teal-700">Доставка по РФ</Badge>
-            <Badge variant="outline" className="border-orange-200 text-orange-700">Изготовление 5-7 дней</Badge>
+            <Badge variant="outline" className="border-orange-200 text-orange-700">Изготовление 7-10 дней</Badge>
             <Button asChild className="rounded-2xl px-5 whitespace-nowrap">
               <a href="#order" className="flex items-center">
                 Оформить заказ
