@@ -40,6 +40,15 @@ const GALLERY = [
   "/gallery/5.jpg",   // Дополнительный пример (повтор)
 ];
 
+const BOOKS_GALLERY = [
+  "/gallery/2.jpg",        // Новое изображение 1
+  "/gallery/4.jpg",        // Новое изображение 2
+  "/gallery/how_1.jpg",    // Новое изображение 3
+  "/gallery/how_6.jpg",    // Новое изображение 4
+  "/gallery/how_7.jpg",    // Новое изображение 5
+  "/gallery/how_9.jpeg",   // Новое изображение 6
+];
+
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -203,7 +212,7 @@ export default function VoobrazhayLanding() {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {grids.map((src, i) => (
+            {BOOKS_GALLERY.map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
                 <img src={src} alt="Примеры персонализированных книг Воображай с уникальными иллюстрациями" className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
