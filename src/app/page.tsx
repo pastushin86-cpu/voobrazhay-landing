@@ -236,7 +236,7 @@ export default function VoobrazhayLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">Почему Воображай</Badge>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Почему выбирают Воображай</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">История, которая существует только для вас</h2>
             <p className="mt-2 text-gray-600">В каждой книге — часть вашей жизни. Мы делаем её ощутимой.</p>
           </motion.div>
 
@@ -275,7 +275,7 @@ export default function VoobrazhayLanding() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-700 space-y-2">
-                  <p>Плотная бумага, чёткая печать и подарочная упаковка — книга выглядит как ценная реликвия.</p>
+                  <p>Плотная бумага, чёткая печать и подарочная упаковка — книга выглядит как ценный подарок.</p>
                 </CardContent>
               </Card>
             </motion.div>
