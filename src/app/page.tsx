@@ -294,7 +294,7 @@ export default function VoobrazhayLanding() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-  "/gallery/gift_3-new.jpeg",
+  "/gallery/Сентябрьская сказка.jpg",
   GALLERY[0],
   "/gallery/14-new.jpg"
 ].map((src, i) => (
