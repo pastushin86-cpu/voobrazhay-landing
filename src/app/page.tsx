@@ -25,11 +25,11 @@ import {
 } from "@/components/ui/accordion";
 
 // -------- Базовые настройки бренда --------
-const TELEGRAM_URL = "https://t.me/VoobrazhayBot?start=landing"; // ← замени при необходимости
+const TELEGRAM_URL = "https://t.me/voobrazhaibot?start=landing"; // ← замени при необходимости
 const PRICING_LINKS = {
-  mini: "https://t.me/VoobrazhayBot?start=mini", // ← заглушка для Мини
-  maxi: "https://t.me/VoobrazhayBot?start=maxi", // ← заглушка для Макси  
-  premium: "https://t.me/VoobrazhayBot?start=premium", // ← заглушка для Премиум
+  mini: "https://t.me/voobrazhaibot?start=mini", // ← заглушка для Мини
+  maxi: "https://t.me/voobrazhaibot?start=maxi", // ← заглушка для Макси  
+  premium: "https://t.me/voobrazhaibot?start=premium", // ← заглушка для Премиум
 };
 const GALLERY = [
   "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
