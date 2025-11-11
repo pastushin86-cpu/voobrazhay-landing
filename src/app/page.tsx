@@ -296,7 +296,7 @@ export default function VoobrazhayLanding() {
             {[
   "/gallery/sentyabrskaya-skazka.jpg?v=3",
   GALLERY[0],
-  "/gallery/14-new.jpg"
+  "/gallery/vika-sestra.jpeg?v=1"
 ].map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
                 <img 
