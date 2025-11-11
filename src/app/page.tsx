@@ -289,7 +289,7 @@ export default function VoobrazhayLanding() {
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Упаковка и доставка</Badge>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Готово к вручению</h2>
-            <p className="mt-2 text-gray-600">Подарочная коробка, тиснение и персональное поздравление на форзаце.</p>
+            <p className="mt-2 text-gray-600">Подарочная упаковка, обложка soft touch и персональное поздравление.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
