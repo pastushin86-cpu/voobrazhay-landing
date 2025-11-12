@@ -404,7 +404,7 @@ export default function VoobrazhayLanding() {
           <div className="grid md:grid-cols-3 gap-6">
             {[{
               name: "Мини",
-              price: "8 900 ₽",
+              price: "6 900 ₽",
               tag: "📖 Лёгкий вариант",
               features: [
                 "персональная история",
@@ -419,7 +419,7 @@ export default function VoobrazhayLanding() {
               link: PRICING_LINKS.mini,
             },{
               name: "Макси",
-              price: "12 900 ₽",
+              price: "10 900 ₽",
               tag: "✨ Самый популярный",
               features: [
                 "персональная история",
@@ -435,7 +435,7 @@ export default function VoobrazhayLanding() {
               link: PRICING_LINKS.maxi,
             },{
               name: "Подарочный",
-              price: "15 900 ₽",
+              price: "12 900 ₽",
               tag: "🎁 Лучший для подарка",
               features: [
                 "персональная история",
