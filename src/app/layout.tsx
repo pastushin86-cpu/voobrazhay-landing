@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Воображай",
     images: [
       {
-        url: "https://voobrazhai.ru/family-box.jpg",
+        url: "https://voobrazhai.ru/gallery/family-box.jpg?v=2",
         width: 1200,
         height: 630,
         alt: "Персонализированная книга Воображай в подарочной упаковке",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Воображай — персонализированные книги",
     description: "Лучший подарок: книга, где главным героем становитесь вы и ваши близкие.",
-    images: ["https://voobrazhai.ru/family-box.jpg"],
+    images: ["https://voobrazhai.ru/gallery/family-box.jpg?v=2"],
   },
   icons: {
     icon: "/gallery/favicon.ico",
@@ -77,7 +77,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Персонализированная книга Воображай",
-    "image": "https://voobrazhai.ru/family-box.jpg",
+    "image": "https://voobrazhai.ru/gallery/family-box.jpg?v=2",
     "description": "Книга, где главным героем становитесь вы, ваш ребёнок, пара или семья. Уникальные иллюстрации и тексты.",
     "brand": {
       "@type": "Brand",

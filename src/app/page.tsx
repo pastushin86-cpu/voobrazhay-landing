@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Sparkles,
   BookOpen,
@@ -32,21 +33,21 @@ const PRICING_LINKS = {
   premium: "https://t.me/voobrazhaibot?start=premium", // ← заглушка для Премиум
 };
 const GALLERY = [
-  "/gallery/family-box.jpg",   // Подарочная коробка (загруженное фото)
-  "/gallery/5.jpg",   // Детская книга с девочкой на метле
-  "/gallery/12.jpeg",    // Романтическая история пары
-  "/gallery/10.jpg", // Детская история с единорогом
-  "/gallery/family-box.jpg",   // Дополнительный пример (повтор)
-  "/gallery/5.jpg",   // Дополнительный пример (повтор)
+  "/gallery/family-box.jpg?v=2",   // Подарочная коробка (загруженное фото)
+  "/gallery/5.jpg?v=2",   // Детская книга с девочкой на метле
+  "/gallery/12.jpeg?v=2",    // Романтическая история пары
+  "/gallery/10.jpg?v=2", // Детская история с единорогом
+  "/gallery/family-box.jpg?v=2",   // Дополнительный пример (повтор)
+  "/gallery/5.jpg?v=2",   // Дополнительный пример (повтор)
 ];
 
 const BOOKS_GALLERY = [
-  "/gallery/2.jpg",        // Правильное изображение 1
-  "/gallery/how_1-new.jpg",    // Правильное изображение 2 (поменяли местами с 4.jpg)
-  "/gallery/4.jpg",        // Правильное изображение 3 (поменяли местами с how_1-new.jpg)
-  "/gallery/how_6-new.jpg",    // Правильное изображение 4 (переименовано)
-  "/gallery/how_9.jpeg",   // Правильное изображение 5 (поменяли местами с how_7-new.jpg)
-  "/gallery/how_7-new.jpg",    // Правильное изображение 6 (поменяли местами с how_9.jpeg)
+  "/gallery/2.jpg?v=2",        // Правильное изображение 1
+  "/gallery/how_1-new.jpg?v=2",    // Правильное изображение 2 (поменяли местами с 4.jpg)
+  "/gallery/4.jpg?v=2",        // Правильное изображение 3 (поменяли местами с how_1-new.jpg)
+  "/gallery/how_6-new.jpg?v=2",    // Правильное изображение 4 (переименовано)
+  "/gallery/how_9.jpeg?v=2",   // Правильное изображение 5 (поменяли местами с how_7-new.jpg)
+  "/gallery/how_7-new.jpg?v=2",    // Правильное изображение 6 (поменяли местами с how_9.jpeg)
 ];
 
 const fadeUp = {
@@ -118,12 +119,37 @@ export default function VoobrazhayLanding() {
 
           {/* Галерея превью на первом экране */}
           <motion.div {...fadeUp} className="grid grid-cols-2 gap-3">
-            {grids.slice(0,4).map((src, i) => (
-              <div key={i} className="relative group overflow-hidden rounded-3xl shadow-sm">
-                <img src={src} alt="Персонализированная книга Воображай с акварельными иллюстрациями" className="h-48 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
-              </div>
-            ))}
+            {grids.slice(0,4).map((src, i) => {
+              // Первые 2 изображения - priority через Next.js Image
+              if (i < 2) {
+                return (
+                  <div key={i} className="relative group overflow-hidden rounded-3xl shadow-sm">
+                    <Image
+                      src={src.split('?')[0]}
+                      alt="Персонализированная книга Воображай с акварельными иллюстрациями"
+                      width={600}
+                      height={400}
+                      className="h-48 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
+                  </div>
+                );
+              }
+              // Остальные - обычные img с lazy loading
+              return (
+                <div key={i} className="relative group overflow-hidden rounded-3xl shadow-sm">
+                  <img 
+                    src={src} 
+                    alt="Персонализированная книга Воображай с акварельными иллюстрациями" 
+                    className="h-48 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
+                </div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
@@ -217,7 +243,9 @@ export default function VoobrazhayLanding() {
                 <img 
                   src={src} 
                   alt="Примеры персонализированных книг Воображай с уникальными иллюстрациями" 
-                  className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  className="h-44 sm:h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
               </motion.div>
@@ -294,15 +322,17 @@ export default function VoobrazhayLanding() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-  "/gallery/sentyabrskaya-skazka.jpg?v=3",
+  "/gallery/sentyabrskaya-skazka.jpg?v=2",
   GALLERY[0],
-  "/gallery/vika-sestra.jpeg?v=1"
+  "/gallery/vika-sestra.jpeg?v=2"
 ].map((src, i) => (
               <motion.div key={i} {...fadeUp} className="relative group overflow-hidden rounded-3xl shadow-sm">
                 <img 
                   src={src} 
                   alt="Книга Воображай в подарочной упаковке с тиснением" 
-                  className="h-52 w-full object-cover" 
+                  className="h-52 w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     console.error('Ошибка загрузки изображения:', src);
                     e.currentTarget.style.border = '2px solid red';
@@ -367,7 +397,13 @@ export default function VoobrazhayLanding() {
                 <Card className="rounded-3xl border-orange-100 h-full">
                   <CardContent className="pt-6">
                     <div className="flex items-center gap-3">
-                      <img src={t.img} alt={`Фото клиента ${t.name} - отзыв о персонализированной книге Воображай`} className="h-10 w-10 rounded-full object-cover" />
+                      <img 
+                        src={t.img} 
+                        alt={`Фото клиента ${t.name} - отзыв о персонализированной книге Воображай`} 
+                        className="h-10 w-10 rounded-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <div>
                         <div className="font-semibold">{t.name}</div>
                         <div className="text-xs text-gray-500">{t.role}</div>
