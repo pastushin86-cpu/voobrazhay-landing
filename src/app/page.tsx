@@ -45,8 +45,8 @@ const BOOKS_GALLERY = [
   "/gallery/1-1.jpg?v=2",
   "/gallery/2-2.jpg?v=2",
   "/gallery/3-3.jpg?v=2",
-  "/gallery/4-4.jpg?v=2",
   "/gallery/5-5.jpg?v=2",
+  "/gallery/4-4.jpg?v=2",
   "/gallery/6-6.jpg?v=2",
 ];
 
