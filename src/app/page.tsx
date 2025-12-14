@@ -349,20 +349,26 @@ export default function VoobrazhayLanding() {
         </div>
       </section>
 
-      {/* О нас + Гарантии и приватность */}
+      {/* О нас + Фото основателя */}
       <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-start">
-          <motion.div {...fadeUp}>
-            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
-            <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
-            <p className="mt-3 text-gray-700">Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. Поэтому мы бережно собираем детали, превращаем их в тёплый текст и иллюстрации, которые хочется перечитывать и пересматривать снова и снова. Эти книги остаются в семье на годы — и становятся её частью.</p>
-          </motion.div>
-          <motion.div {...fadeUp}>
-            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Гарантии и забота</Badge>
-            <div className="mt-3 space-y-3 text-gray-700">
-              <div className="flex items-start gap-3"><Check className="h-5 w-5 text-orange-600 mt-0.5" />Работаем до тех пор, пока книга не вызывает у вас искреннее «Вау!».</div>
-              <div className="flex items-start gap-3"><Shield className="h-5 w-5 text-orange-600 mt-0.5" />Все фото и материалы используются только для книги и удаляются после печати.</div>
-              <div className="flex items-start gap-3"><Gift className="h-5 w-5 text-orange-600 mt-0.5" />На первой странице можно оставить личное поздравление или послание для близкого человека.</div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-8 items-start md:items-center">
+            <div className="flex-1">
+              <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
+              <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
+              <p className="mt-3 text-gray-700">Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. Поэтому мы бережно собираем детали, превращаем их в тёплый текст и иллюстрации, которые хочется перечитывать и пересматривать снова и снова. Эти книги остаются в семье на годы — и становятся её частью.</p>
+            </div>
+            <div className="flex-shrink-0 text-center md:text-left">
+              <div className="relative inline-block">
+                <img 
+                  src="/gallery/тайц.png" 
+                  alt="Анастасия Тайц, основатель Воображай" 
+                  className="w-48 sm:w-56 md:w-64 h-auto object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p className="mt-4 text-sm font-medium text-gray-700">Анастасия Тайц,<br />основатель Воображай</p>
             </div>
           </motion.div>
         </div>
