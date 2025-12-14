@@ -381,17 +381,17 @@ export default function VoobrazhayLanding() {
               name: "Ирина и Андрей",
               role: "Санкт‑Петербург",
               quote: "Подарили сыну на день рождения — он хохотал и радовался, когда узнавал наши фразы и свои любимые места. Теперь это его любимая книга перед сном.",
-              img: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?q=80&w=256&auto=format&fit=crop",
+              img: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=256&h=256&fit=crop&crop=faces&auto=format&q=80",
             },{
               name: "Наташа",
               role: "Москва",
               quote: "История получилась тёплой и настоящей, как будто написана специально для нас. А акварельные иллюстрации — прямо оживают на страницах.",
-              img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=256&auto=format&fit=crop",
+              img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=256&h=256&fit=crop&crop=faces&auto=format&q=80",
             },{
               name: "Алексей",
               role: "Новосибирск",
               quote: "Мы заказали книгу на годовщину родителей. Она стала центром праздника — гости листали, смеялись и просили контакты. Теперь книга занимает почётное место дома.",
-              img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=256&auto=format&fit=crop",
+              img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=256&h=256&fit=crop&crop=faces&auto=format&q=80",
             }].map((t, i) => (
               <motion.div key={i} {...fadeUp}>
                 <Card className="rounded-3xl border-orange-100 h-full">
