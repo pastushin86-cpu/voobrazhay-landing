@@ -42,12 +42,12 @@ const GALLERY = [
 ];
 
 const BOOKS_GALLERY = [
-  "/gallery/2.jpg?v=2",        // Правильное изображение 1
-  "/gallery/how_1-new.jpg?v=2",    // Правильное изображение 2 (поменяли местами с 4.jpg)
-  "/gallery/4.jpg?v=2",        // Правильное изображение 3 (поменяли местами с how_1-new.jpg)
-  "/gallery/how_6-new.jpg?v=2",    // Правильное изображение 4 (переименовано)
-  "/gallery/how_9.jpeg?v=2",   // Правильное изображение 5 (поменяли местами с how_7-new.jpg)
-  "/gallery/how_7-new.jpg?v=2",    // Правильное изображение 6 (поменяли местами с how_9.jpeg)
+  "/gallery/1-1.jpg?v=2",
+  "/gallery/2-2.jpg?v=2",
+  "/gallery/3-3.jpg?v=2",
+  "/gallery/4-4.jpg?v=2",
+  "/gallery/5-5.jpg?v=2",
+  "/gallery/6-6.jpg?v=2",
 ];
 
 const fadeUp = {
