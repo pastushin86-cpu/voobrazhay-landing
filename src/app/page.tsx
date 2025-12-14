@@ -361,7 +361,7 @@ export default function VoobrazhayLanding() {
             <div className="flex-shrink-0 text-center md:text-left">
               <div className="relative inline-block">
                 <img 
-                  src="/gallery/тайц.png" 
+                  src="/gallery/taits.jpg?v=1" 
                   alt="Анастасия Тайц, основатель Воображай" 
                   className="w-48 sm:w-56 md:w-64 h-auto object-contain"
                   loading="lazy"
