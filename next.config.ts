@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Убираем предупреждение Next.js про неверный workspace root
-  outputFileTracingRoot: "/Users/kirillpastusin/voobrazhay-landing",
+  // Конфигурация для Next.js
 };
 
 export default nextConfig;
