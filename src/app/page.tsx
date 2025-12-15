@@ -350,7 +350,7 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* О нас + Фото основателя */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-white to-[#FFF4EC]">
+      <section className="py-14 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="flex flex-col md:flex-row items-start md:items-end md:justify-between gap-8">
             <div className="md:w-[55%]">
