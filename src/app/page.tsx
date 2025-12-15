@@ -155,7 +155,7 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* Для кого */}
-      <section className="py-14 sm:py-20">
+      <section className="py-14 sm:py-20 bg-[#FFF4EC]/70">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">Для кого</Badge>
