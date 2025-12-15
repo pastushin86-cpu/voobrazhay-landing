@@ -350,31 +350,29 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* О нас + Фото основателя */}
-      <section className="py-14 sm:py-20">
+      <section className="py-14 sm:py-20 bg-gradient-to-b from-white to-[#FFF4EC]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="flex flex-col md:flex-row items-center md:items-center md:justify-between gap-8">
+          <motion.div {...fadeUp} className="flex flex-col md:flex-row items-start md:items-end md:justify-between gap-8">
             <div className="md:w-[55%]">
               <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
               <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
-              <p className="mt-3 text-gray-700 leading-relaxed">
-                Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. 
-                <br /><br />
+              <p className="mt-3 text-gray-700 leading-relaxed italic">
+                «Мы уверены: лучший подарок — это не вещь, а история, где есть вы и ваши близкие. 
                 Поэтому мы бережно собираем детали, превращаем их в тёплый текст и иллюстрации, которые хочется перечитывать и пересматривать снова и снова. 
-                <br /><br />
-                Эти книги остаются в семье на годы — и становятся её частью.
+                Эти книги остаются в семье на годы — и становятся её частью.»
               </p>
+              <p className="mt-4 text-sm italic text-gray-700">Анастасия Тайц, основатель Воображай</p>
             </div>
             <div className="flex-shrink-0 text-center md:text-left md:w-[40%] flex flex-col items-center md:items-start">
               <div className="relative inline-block">
                 <img 
                   src="/gallery/taits.jpg?v=1" 
                   alt="Анастасия Тайц, основатель Воображай" 
-                  className="w-40 sm:w-44 md:w-48 h-auto object-contain"
+                  className="w-48 sm:w-52 md:w-60 h-auto object-contain"
                   loading="lazy"
                   decoding="async"
                 />
               </div>
-              <p className="mt-4 text-sm italic text-gray-700">Анастасия Тайц, основатель Воображай</p>
             </div>
           </motion.div>
         </div>
