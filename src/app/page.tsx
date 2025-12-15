@@ -183,7 +183,7 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* Как это работает */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-white to-[#FFF4EC]">
+      <section className="py-14 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-10">
             <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">Просто как 1‑2‑3</Badge>
