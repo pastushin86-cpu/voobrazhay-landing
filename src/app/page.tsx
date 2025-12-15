@@ -351,9 +351,9 @@ export default function VoobrazhayLanding() {
 
       {/* О нас + Фото основателя */}
       <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="md:w-1/2">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="flex flex-col md:flex-row items-center md:items-center md:justify-between gap-8">
+            <div className="md:w-[55%]">
               <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100">О нас</Badge>
               <h3 className="mt-3 text-2xl font-bold">Почему мы делаем «Воображай»</h3>
               <p className="mt-3 text-gray-700 leading-relaxed">
@@ -364,7 +364,7 @@ export default function VoobrazhayLanding() {
                 Эти книги остаются в семье на годы — и становятся её частью.
               </p>
             </div>
-            <div className="flex-shrink-0 text-center md:text-left md:w-1/2 flex flex-col items-center md:items-start">
+            <div className="flex-shrink-0 text-center md:text-left md:w-[40%] flex flex-col items-center md:items-start">
               <div className="relative inline-block">
                 <img 
                   src="/gallery/taits.jpg?v=1" 
