@@ -593,7 +593,11 @@ export default function VoobrazhayLanding() {
             <span>Воображай</span>
             <span className="text-gray-400">— книги, где оживают истории</span>
           </div>
-          <div className="text-sm text-gray-500">© {new Date().getFullYear()} Воображай. Все права защищены.</div>
+          <div className="text-sm text-gray-500 space-y-1">
+            <div>© {new Date().getFullYear()} Воображай. Все права защищены.</div>
+            <div>ИП Пастушин Кирилл Аркадьевич</div>
+            <div>ОГРНИП 319784700406027</div>
+          </div>
         </div>
       </footer>
     </div>
