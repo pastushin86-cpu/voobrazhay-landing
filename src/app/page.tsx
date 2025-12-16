@@ -350,7 +350,7 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* О нас + Фото основателя */}
-      <section className="py-14 sm:py-20">
+      <section className="pt-12 pb-14 sm:pt-16 sm:pb-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="flex flex-col md:flex-row items-start md:items-end md:justify-between gap-8">
             <div className="md:w-[55%]">
@@ -368,7 +368,7 @@ export default function VoobrazhayLanding() {
                 <img 
                   src="/gallery/taits.jpg?v=1" 
                   alt="Анастасия Тайц, основатель Воображай" 
-                  className="w-48 sm:w-52 md:w-60 h-auto object-contain"
+                  className="w-56 sm:w-60 md:w-72 h-auto object-contain"
                   loading="lazy"
                   decoding="async"
                 />
