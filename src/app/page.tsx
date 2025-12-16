@@ -363,8 +363,8 @@ export default function VoobrazhayLanding() {
               </p>
               <p className="mt-4 text-sm italic text-gray-700">Анастасия Тайц, основатель Воображай</p>
             </div>
-            <div className="flex-shrink-0 text-center md:text-left md:w-[40%] flex flex-col items-center md:items-start">
-              <div className="relative inline-block">
+            <div className="flex-shrink-0 text-center md:text-left md:w-[40%] flex flex-col items-center md:items-end md:justify-end">
+              <div className="relative inline-block md:-mb-14">
                 <img 
                   src="/gallery/taits.jpg?v=1" 
                   alt="Анастасия Тайц, основатель Воображай" 
