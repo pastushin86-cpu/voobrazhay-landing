@@ -350,7 +350,7 @@ export default function VoobrazhayLanding() {
       </section>
 
       {/* О нас + Фото основателя */}
-      <section className="pt-12 pb-14 sm:pt-16 sm:pb-20">
+      <section className="pt-8 pb-14 sm:pt-10 sm:pb-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="flex flex-col md:flex-row items-start md:items-end md:justify-between gap-8">
             <div className="md:w-[55%]">
